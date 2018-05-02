@@ -73,7 +73,7 @@ $di->set('ratelimiter.register', $di->lazyNew(
 	Ushahidi\App\RateLimiter::class,
 	array(
 		'flap' => $di->lazyGet('ratelimiter.register.flap'),
-		'throttlingStrategy' => $di->lazyGet('ratelimiter.register.strategy'),	
+		'throttlingStrategy' => $di->lazyGet('ratelimiter.register.strategy'),
 	)
 ));
 
@@ -104,7 +104,7 @@ $di->set('ratelimiter.login', $di->lazyNew(
 	Ushahidi\App\RateLimiter::class,
 	array(
 		'flap' => $di->lazyGet('ratelimiter.login.flap'),
-		'throttlingStrategy' => $di->lazyGet('ratelimiter.login.strategy'),	
+		'throttlingStrategy' => $di->lazyGet('ratelimiter.login.strategy'),
 	)
 ));
 
